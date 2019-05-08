@@ -25,3 +25,15 @@ Observations:
 enough data in the collection such that the queries start taking a while to complete. You can see this easily as
 mongo will start to log the slow running queries.
 1. Looks like once the queries become slow, the check for isMaster eventually times out (60s)
+
+### Related links/tickets
+
+* https://github.com/ReactiveMongo/ReactiveMongo/issues/441
+* https://groups.google.com/forum/#!topic/reactivemongo/eqjA34mdX7s
+* https://groups.google.com/forum/#!topic/reactivemongo/nKIN7Cytguc
+* https://github.com/ReactiveMongo/ReactiveMongo/issues/721
+* https://groups.google.com/forum/#!searchin/reactivemongo/oups%7Csort:date/reactivemongo/FEJjwVivV2Y/FoYUHnX5CQAJ
+* https://groups.google.com/forum/#!searchin/reactivemongo/oups%7Csort:date/reactivemongo/wsXlEDvZCGI/FZDKX78KBgAJ
+* https://groups.google.com/forum/#!searchin/reactivemongo/oups%7Csort:date/reactivemongo/wMJorjJThrg/DMAKZRemCgAJ
+
+Adapted from https://github.com/joymufeng/test-reactivemongo
