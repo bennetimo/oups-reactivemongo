@@ -3,11 +3,11 @@
 import ammonite.ops._
 import ammonite.ops.ImplicitWd._
 
-import $ivy.`org.reactivemongo::reactivemongo:0.16.1`
+import $ivy.`org.reactivemongo::reactivemongo:0.16.6`
 import $ivy.`org.slf4j:slf4j-simple:1.7.25`
 
 import java.time.format.DateTimeFormatter
-import java.time.{LocalDate, LocalDateTime, ZoneOffset}
+import java.time.{LocalDateTime, ZoneOffset}
 
 import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.api.{DefaultDB, MongoConnection, MongoDriver}
@@ -18,7 +18,7 @@ import scala.util.Properties
 
 val MONGO_HOST = Properties.envOrElse("MONGO_HOST", "localhost")
 
-val mongoUri = s"mongodb://${MONGO_HOST}:27017/test?rm.nbChannelsPerNode=10&heartbeatFrequencyMS=30000&rm.failover=default"
+val mongoUri = s"mongodb://${MONGO_HOST}:27017/test"
 
 import ExecutionContext.Implicits.global // use any appropriate context
 
